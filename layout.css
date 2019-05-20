@@ -2,6 +2,7 @@
   font-family: monospace;
   font-size: 20px;
   text-align: center; 
+  padding-top: 1px;
 }
 form {
   font-size: 20px
@@ -25,7 +26,6 @@ span {
 button {
   font-size: 20px;
   margin-top: 15px;
-  float: right;
 }
 #input-section {
   background-color:#EAECEE;
@@ -54,8 +54,13 @@ body {
   color: white;
   font-size: 40px;
   margin: 20px 0;
+  bottom: 5px;
 }
 #img-input {
-  position:absolute;
   width: 350px;
+}
+
+.add-meme-button-container {
+  display: flex;
+  justify-content: flex-end;
 }
