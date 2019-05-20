@@ -38,6 +38,7 @@ body {
 .meme-container {
   position:relative;
   width: 350px;
+  margin: 0 100px;
 }
 .top-text {
   position:absolute;
@@ -46,6 +47,7 @@ body {
   color: white;
   font-size: 40px;
   margin: 20px 0;
+  font-family: impact;
 }
 .bottom-text {
   position:absolute;
@@ -55,6 +57,7 @@ body {
   font-size: 40px;
   margin: 20px 0;
   bottom: 5px;
+  font-family: impact;
 }
 .img-input {
   width: 350px;
@@ -63,4 +66,10 @@ body {
 .add-meme-button-container {
   display: flex;
   justify-content: flex-end;
+}
+
+#all-meme-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
