@@ -10,11 +10,11 @@ window.addEventListener("DOMContentLoaded", () => {
     var imageUrl = document.getElementById("image-input").value;
     var imageTag = document.getElementsByTagName("img")[0];
     imageTag.src = imageUrl;
-    var topText = document.getElementById("top-text").value;
-    var bottomText = document.getElementById("bottom-text").value;
-    var topMemeTextElement = document.getElementById("top-text-input");
+    var topText = document.getElementById("top-text-input").value;
+    var bottomText = document.getElementById("bottom-text-input").value;
+    var topMemeTextElement = document.getElementById("top-text");
     topMemeTextElement.textContent = topText;
-    var bottomMemeTextElement = document.getElementById("bottom-text-input");
+    var bottomMemeTextElement = document.getElementById("bottom-text");
     bottomMemeTextElement.textContent = bottomText;
   });
 });
