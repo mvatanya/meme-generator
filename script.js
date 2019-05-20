@@ -1,21 +1,20 @@
 //add event listener to the button add memes
+//in the function, read input value of image url
+//find image tag in the page
+//set the source of the image tag to be that url that you read from the input
 
-
-window.addEventListener('DOMContentLoaded', () => {
-  var buttonElement = document.getElementById('button-add-memes');
-  buttonElement.addEventListener('click', function (event) {
+window.addEventListener("DOMContentLoaded", () => {
+  var buttonElement = document.getElementById("button-add-memes");
+  buttonElement.addEventListener("click", function(event) {
     event.preventDefault();
-    var imageUrl = document.getElementById('image-input').value;
-    var imageTag = document.getElementsByTagName('img')[0];
+    var imageUrl = document.getElementById("image-input").value;
+    var imageTag = document.getElementsByTagName("img")[0];
     imageTag.src = imageUrl;
-    var topText = document.getElementById('top-text').value;
-    var bottomText = document.getElementById('bottom-text').value;
+    var topText = document.getElementById("top-text").value;
+    var bottomText = document.getElementById("bottom-text").value;
+    var topMemeTextElement = document.getElementById("top-text-input");
+    topMemeTextElement.textContent = topText;
+    var bottomMemeTextElement = document.getElementById("bottom-text-input");
+    bottomMemeTextElement.textContent = bottomText;
   });
 });
-
-//in the function, read input value of image url
-
-//find image tag in the page
-
-
-//set the source of the image tag to be that url that you read from the input
