@@ -7,14 +7,20 @@ window.addEventListener("DOMContentLoaded", () => {
   var buttonElement = document.getElementById("button-add-memes");
   buttonElement.addEventListener("click", function(event) {
     event.preventDefault();
-    var imageUrl = document.getElementById("image-input").value;
+
+    var imageUrlInputElement = document.getElementById("image-input");
     var imageTag = document.getElementsByTagName("img")[0];
-    imageTag.src = imageUrl;
-    var topText = document.getElementById("top-text-input").value;
-    var bottomText = document.getElementById("bottom-text-input").value;
-    var topMemeTextElement = document.getElementById("top-text");
-    topMemeTextElement.textContent = topText;
+    imageTag.src = imageUrlInputElement.value;
+    imageUrlInputElement.value = "";
+
+    var bottomTextInputElement = document.getElementById("bottom-text-input");
     var bottomMemeTextElement = document.getElementById("bottom-text");
-    bottomMemeTextElement.textContent = bottomText;
+    bottomMemeTextElement.textContent = bottomTextInputElement.value;
+    bottomTextInputElement.value = "";
+
+    var topTextInputElement = document.getElementById("top-text-input");
+    var topMemeTextElement = document.getElementById("top-text");
+    topMemeTextElement.textContent = topTextInputElement.value;
+    topTextInputElement.value = "";
   });
 });
