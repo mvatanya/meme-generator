@@ -13,11 +13,13 @@ window.addEventListener("DOMContentLoaded", () => {
     var pTop = document.createElement("p");
     var pBottom = document.createElement("p");
     var img = document.createElement("img");
+    var buttonX = document.createElement("img");
     //create class for each elements
     memeContainer.className = "meme-container";
     pTop.className = "top-text";
     pBottom.className = "bottom-text";
     img.className = "img-input";
+    buttonX.className = "button-X";
     //put image source in the element that is created for image (img)
     var imageUrlInputElement = document.getElementById("image-input");
     img.src = imageUrlInputElement.value;
@@ -30,10 +32,14 @@ window.addEventListener("DOMContentLoaded", () => {
     var bottomTextInputElement = document.getElementById("bottom-text-input");
     pBottom.textContent = bottomTextInputElement.value;
     bottomTextInputElement.value = "";
+
+    buttonX.src = "closebuttonimage.svg";
     //append each element in to the meme container
     memeContainer.appendChild(pTop);
     memeContainer.appendChild(pBottom);
+    memeContainer.appendChild(buttonX);
     memeContainer.appendChild(img);
+
     //append each meme container into the big memes container
     var allMemeContainerElement = document.getElementById("all-meme-container");
     allMemeContainerElement.appendChild(memeContainer);

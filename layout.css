@@ -73,3 +73,15 @@ body {
   flex-flow: row wrap;
   align-items: flex-start;
 }
+
+.button-X{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+
