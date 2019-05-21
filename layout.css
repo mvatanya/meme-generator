@@ -68,13 +68,13 @@ body {
   justify-content: flex-end;
 }
 
-#all-meme-container{
+#all-meme-container {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
 }
 
-.button-X{
+.button-X {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,6 +82,10 @@ body {
   height: 60px;
   margin-top: -30px;
   margin-left: -30px;
+  display: none;
 }
 
+.meme-container:hover .button-X {
+  display: block;
+}
 

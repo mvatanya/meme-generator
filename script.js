@@ -43,5 +43,12 @@ window.addEventListener("DOMContentLoaded", () => {
     //append each meme container into the big memes container
     var allMemeContainerElement = document.getElementById("all-meme-container");
     allMemeContainerElement.appendChild(memeContainer);
+
+    buttonX.addEventListener("click", function(event) {
+      var closeButton = event.target;
+      var memeContainerToDelete = closeButton.parentNode;
+      var allMemeContainer = memeContainerToDelete.parentNode;
+      allMemeContainer.removeChild(memeContainerToDelete);
+    });
   });
 });
